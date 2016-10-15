@@ -21,6 +21,26 @@ You should install [prh](https://github.com/vvakame/prh "prh") or [textlint-rule
 
     git subtree push --prefix=prh https://github.com/azu/prh.yml.git master
 
+## Setting of `prh.yml`
+
+You can import these prh dictionary files from main `prh.yml`.
+
+```yml
+version: 1
+imports:
+  - prh/ja/jser-info.yml
+  - prh/ja/kanji-open.yml
+  - prh/ja/spoken.yml
+  - prh/ja/typo.yml
+  - prh/javascript.yml
+  - prh/css.yml
+  - prh/software.yml
+rules:
+  # project configuration
+  - expected: Almin
+    patterns: /almin.js/i
+```
+
 ## Running tests
 
 Install devDependencies and Run `npm test`:
