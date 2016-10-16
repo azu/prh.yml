@@ -1,11 +1,24 @@
 # A collection of `prh.yml` [![Build Status](https://travis-ci.org/azu/prh.yml.svg?branch=master)](https://travis-ci.org/azu/prh.yml)
 
+A collection of dictionary for [prh](https://github.com/vvakame/prh "prh").
 
 ## Requirement
 
 You should install [prh](https://github.com/vvakame/prh "prh") or [textlint-rule-prh](https://github.com/azu/textlint-rule-prh/releases/tag/2.4.0 "textlint-rule-prh").
 
 [textlint-rule-prh](https://github.com/azu/textlint-rule-prh/releases/tag/2.4.0 "textlint-rule-prh") with [textlint](https://github.com/textlint/textlint "textlint") >= 7.1.2
+
+## Dictionary
+
+- [css.yml](css.yml) -  CSS Dictionary
+- [javascript.yml](javascript.yml) -  JavaScript Dictionary
+- [other.yml](other.yml) -  Other
+- [software.yml](software.yml) -  Software dictionary
+- [ja/jser-info.yml](ja/jser-info.yml) -  JSer.info 特有の表現統一の辞書
+- [ja/kanji-open.yml](ja/kanji-open.yml) -  漢字の開きをチェックする辞書
+- [ja/spoken.yml](ja/spoken.yml) -  口語表現をチェックする辞書
+- [ja/typo.yml](ja/typo.yml) -  明らかなtypoをチェックする辞書
+- [ja/web+db.yml](ja/web+db.yml) -  WEB+DB PRESS用語統一ファイルをよりゆるやかにした辞書
 
 ## Usage
 
@@ -37,11 +50,12 @@ rules:
     patterns: /almin.js/i
 ```
 
-## Running tests
+## Folder structure
 
-Install devDependencies and Run `npm test`:
+The files in the root directory are for `*.yml` file that are project specific, such as programming language or framework specific templates. 
+Natural language file should go into the `<lang>/` directory.
 
-    npm i -d && npm test
+e.g.) `ja/typo.yml` define typo for japanese.
 
 ## Contributing
 
@@ -52,6 +66,12 @@ For bugs and feature requests, [please create an issue](https://github.com/azu/p
 1. Edit some.yml file
 2. Add `expected` and `patterns`, also add `specs`.
 3. Send Pull Request! 
+
+## Running tests
+
+Install devDependencies and Run `npm test`:
+
+    npm i -d && npm test
 
 ## Author
 

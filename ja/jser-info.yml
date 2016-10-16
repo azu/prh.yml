@@ -1,4 +1,4 @@
-# JSer.info 特有の表現統一なので少し厳し目に
+# JSer.info 特有の表現統一の辞書
 version: 1
 rules:
   - expected: $1発売

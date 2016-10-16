@@ -1,4 +1,4 @@
-# 漢字の開き
+# 漢字の開きをチェックする辞書
 version: 1
 rules:
   - expected: もとづ$1
