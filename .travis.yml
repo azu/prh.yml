@@ -1,3 +1,5 @@
 sudo: false
 language: node_js
 node_js: "stable"
+after_success:
+- test $TRAVIS_BRANCH == "master" && sh .meta/update-technical-word-rules.sh
