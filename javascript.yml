@@ -114,7 +114,6 @@ rules:
         to  : jQuery
       - from: jquery-ui
         to  : jquery-ui
-  - expected: Browserify
   - expected: Redux
     pattern:
       - /redux(?!-)/i
