@@ -1,6 +1,7 @@
 {
   "author": "azu",
   "license": "MIT",
+  "name": "@azu/prh.yml",
   "description": "A collection of prh.yml",
   "scripts": {
     "test": "find . -name '*.yml' | egrep -v '.travis.yml' | egrep -v 'node_modules' | xargs -I{} $(npm bin)/prh --rules {} ./README.md > /dev/null",
