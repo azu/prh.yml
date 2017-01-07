@@ -3,7 +3,7 @@
   "license": "MIT",
   "description": "A collection of prh.yml",
   "scripts": {
-    "test": "find . -name \"*.yml\" | xargs -I{} $(npm bin)/prh --rules {} ./README.md > /dev/null",
+    "test": "find . -name '*.yml' | egrep -v '.travis.yml' | egrep -v 'node_modules' | xargs -I{} $(npm bin)/prh --rules {} ./README.md > /dev/null",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "main": "index.js",
