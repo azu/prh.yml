@@ -7,6 +7,9 @@
     "test": "find . -name '*.yml' | egrep -v '.travis.yml' | egrep -v 'node_modules' | xargs -I{} $(npm bin)/prh --rules {} ./README.md > /dev/null",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "files": [
     "*.yml"
