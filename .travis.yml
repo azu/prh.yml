@@ -1,5 +1,15 @@
-sudo: false
 language: node_js
-node_js: "stable"
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - '6'
+before_script:
+  - npm prune
 after_success:
-- test $TRAVIS_BRANCH == "master" && sh .meta/update-technical-word-rules.sh
+  - npm run semantic-release
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/

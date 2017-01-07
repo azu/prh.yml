@@ -2,10 +2,14 @@
   "author": "azu",
   "license": "MIT",
   "description": "A collection of prh.yml",
-  "private": true,
   "scripts": {
-    "test": "find . -name \"*.yml\" | xargs -I{} $(npm bin)/prh --rules {} ./README.md > /dev/null"
+    "test": "find . -name \"*.yml\" | xargs -I{} $(npm bin)/prh --rules {} ./README.md > /dev/null",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
+  "main": "index.js",
+  "files": [
+    "*.yml"
+  ],
   "keywords": [
     "prh",
     "textlint",
@@ -24,6 +28,8 @@
   "devDependencies": {
     "add-text-to-markdown": "^1.0.2",
     "glob": "^7.1.1",
-    "prh": "^1.0.3"
-  }
+    "prh": "^1.0.3",
+    "semantic-release": "^6.3.2"
+  },
+  "version": "0.0.0-development"
 }
