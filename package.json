@@ -10,6 +10,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "release": {
+    "analyzeCommits": "semantic-release-default-major"
+  },
   "main": "index.js",
   "files": [
     "**/*.yml"
@@ -33,7 +36,8 @@
     "add-text-to-markdown": "^1.0.2",
     "glob": "^7.1.1",
     "prh": "^1.0.3",
-    "semantic-release": "^6.3.2"
+    "semantic-release": "^6.3.2",
+    "semantic-release-default-major": "^1.0.2"
   },
   "version": "0.0.0-development"
 }
