@@ -37,7 +37,7 @@
     "glob": "^7.1.1",
     "prh": "^1.0.3",
     "semantic-release": "^6.3.2",
-    "semantic-release-default-major": "^1.0.2"
+    "semantic-release-default-major": "^1.0.3"
   },
   "version": "0.0.0-development"
 }
