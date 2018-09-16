@@ -116,12 +116,15 @@ rules:
         to  : jquery-ui
   - expected: Redux
     pattern:
-      - /redux(?!-)/i
+      - /(-)?redux(?!-)/i
+    regexpMustEmpty: $1
     specs:
       - from: redux
         to  : Redux
       - from: redux-react
         to  : redux-react
+      - from: react-redux
+        to  : react-redux
 
   - expected: Underscore.js
   # AngularはAngularJS、AngularDartを包含する用語
