@@ -788,7 +788,7 @@ rules:
     pattern: /\biOS SDK\b/i
 
   - expected: ISO
-    pattern: /ISO\-/
+    pattern: /ISO-/
 
   # ★ISO9★
   - expected: ISO $1
