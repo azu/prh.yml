@@ -175,7 +175,12 @@ rules:
   - expected: いずれ
     patterns: 何れ
   - expected: いつ
-    patterns: 何時
+    patterns: /何時(?!間)/
+    specs:
+      - from: 何時
+        to: いつ
+      - from: 何時間
+        to: 何時間
   - expected: およそ
     patterns: 凡そ
   - expected: おもむろに
