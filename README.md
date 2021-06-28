@@ -1,3 +1,5 @@
+# ⚠️ No longer maintenance ⚠️
+
 # A collection of `prh.yml` [![Build Status](https://travis-ci.org/azu/prh.yml.svg?branch=master)](https://travis-ci.org/azu/prh.yml)
 
 A collection of dictionary for [prh](https://github.com/vvakame/prh "prh").
